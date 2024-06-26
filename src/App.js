@@ -10,7 +10,7 @@ function App() {
         <div className="row">
           <div className="col-4">
             <img
-              src="src/sample-designs.png"
+              src="src/images/sample-designs.png"
               alt="Simple mirrorred freehand design"
             />
           </div>
@@ -24,7 +24,7 @@ function App() {
           </div>
           <div className="col-4">
             <img
-              src="src/sample-designs.png"
+              src="src/images/sample-designs.png"
               alt="Simple mirrorred freehand design"
             />
           </div>

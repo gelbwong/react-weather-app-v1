@@ -4,9 +4,9 @@
 }
 
 .container {
-  border: 10px solid var(--sample-colour);
+  /*border: 10px solid var(--sample-colour);*/
   margin-top: 100px;
-  border-radius: 375px 160px 280px 10px/10px 2px 12px 255px;
+  /*border-radius: 375px 160px 280px 10px/10px 2px 12px 255px;*/
   text-align: center;
   max-width: 650px;
   color: var(--text-colour);
