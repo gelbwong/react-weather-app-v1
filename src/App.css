@@ -1,18 +1,69 @@
 :root {
   --text-colour: rgb(112, 1, 1);
-  --sample-colour: #e5937f;
+  --sample-colour: #480d0d;
 }
 
 .container {
-  /*border: 10px solid var(--sample-colour);*/
+  border: 10px solid var(--sample-colour);
   margin-top: 100px;
   /*border-radius: 375px 160px 280px 10px/10px 2px 12px 255px;*/
   text-align: center;
-  max-width: 650px;
+  max-width: 700px;
   color: var(--text-colour);
 }
 
 body {
   background-color: #f1be70;
   background-image: url(noise.svg);
+}
+
+.city-title {
+  margin: 0 auto;
+  margin-top: 60px;
+  font-size: 50px;
+  overflow-anchor: 4px;
+}
+.country-title {
+  margin-top: 20px;
+  font-size: 35px;
+}
+
+.search-engine {
+  padding: 25px 0px 10px 0px;
+}
+.search-bar,
+.search-button {
+  border: 1px solid var(--sample-colour);
+}
+.search-bar::placeholder,
+.search-button,
+.search-button:hover {
+  font-family: "Playfair Display";
+  color: var(--text-colour);
+}
+.search-bar {
+  background: transparent;
+}
+.search-button {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.search-button:hover {
+  background-color: #480d0dad;
+  color: antiquewhite;
+}
+
+.current-weather-details {
+  padding-top: 30px;
+}
+.current-weather {
+  --bs-list-group-bg: transparent !important;
+  --bs-list-group-color: var(--text-colour) !important;
+  padding-top: 15px;
+  font-size: 21px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+.list-group-item {
+  border-bottom: 1px solid var(--text-colour) !important;
 }
