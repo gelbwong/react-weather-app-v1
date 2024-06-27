@@ -31,7 +31,7 @@ body {
 .Weather .search-bar:focus,
 .Weather .search-bar {
   font-family: "Playfair Display";
-  color: var(--text-colour);
+  color: var(--lighter-text-colour);
   font-size: 18px;
 }
 .Weather .search-bar {
