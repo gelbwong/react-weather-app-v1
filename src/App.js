@@ -7,7 +7,7 @@ import RightDesign from "./images/Right-design.png";
 function App() {
   return (
     <div className="App container">
-      <div className="row">
+      <div className="row mt-4">
         <div className="col-4">
           <img
             src={LeftDesign}
@@ -30,14 +30,14 @@ function App() {
 
       <form className="search-engine">
         <div className="row">
-          <div className="col-10">
+          <div className="col-10 search-bar-div">
             <input
               type="search"
               placeholder="Enter a city..."
               className="form-control search-bar"
             />
           </div>
-          <div className="col-2">
+          <div className="col-2 search-button-div">
             <input type="submit" value="Search" className="btn search-button" />
           </div>
         </div>

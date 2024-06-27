@@ -1,12 +1,13 @@
 footer {
   margin: 50px 0px;
   padding: 0px 50px;
-  font-family: "Playfair Display", serif;
-  font-size: 15px;
+  font-family: monospace;
+  font-size: 14px;
 }
 
+footer,
 footer a {
-  color: var(--text-colour);
+  color: var(--lighter-text-colour);
 }
 
 footer a:hover {
