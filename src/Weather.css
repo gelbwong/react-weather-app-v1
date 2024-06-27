@@ -1,0 +1,83 @@
+:root {
+  --text-colour: rgb(112, 1, 1);
+  --sample-colour: #480d0d;
+  --lighter-text-colour: #480d0dc4;
+}
+body {
+  background-image: url(noise.svg);
+}
+
+.Weather .city-title {
+  margin: 0 auto;
+  margin-top: 60px;
+  font-size: 50px;
+}
+.Weather .country-title {
+  margin-top: 20px;
+  font-size: 35px;
+  font-family: "Playfair Display";
+}
+
+.Weather .search-engine {
+  padding: 25px 20px 10px 20px;
+}
+.Weather .search-bar,
+.Weather .search-button {
+  border: 1px solid var(--sample-colour);
+}
+.Weather .search-bar::placeholder,
+.Weather .search-button,
+.Weather .search-button:hover,
+.Weather .search-bar:focus,
+.Weather .search-bar {
+  font-family: "Playfair Display";
+  color: var(--text-colour);
+  font-size: 18px;
+}
+.Weather .search-bar {
+  background: transparent;
+  padding: 12px;
+}
+
+.Weather .search-bar:focus {
+  background-color: transparent;
+}
+
+.Weather .search-button {
+  padding: 12px 18px;
+}
+.Weather .search-button:hover {
+  background-color: #480d0dad;
+  color: antiquewhite;
+}
+
+.Weather .current-date {
+  background-image: url(./images/center-piece.png);
+  background-size: 320px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.Weather .current-weather-details {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.Weather .current-weather {
+  --bs-list-group-bg: transparent !important;
+  --bs-list-group-color: var(--text-colour) !important;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  line-height: 1.7;
+  font-style: italic;
+  letter-spacing: 1.3px;
+}
+.Weather .list-group-item {
+  border-bottom-color: var(--lighter-text-colour) !important;
+}
+.Weather .current-weather-decoration {
+  margin-top: 25px;
+}
