@@ -43,28 +43,41 @@ function App() {
         </div>
       </form>
 
+      <div className="row current-date ">
+        <div className="col-6 text-start date-time">Thursday 1:00 pm</div>
+        <div className="col-6 text-end weather-description">Mostly Cloudy</div>
+      </div>
+
       <div className="row current-weather-details">
         <div className="col-4">
           <img
             src={Design}
             alt="Simple mirrorred freehand design"
-            className="img-fluid"
+            className="img-fluid current-weather-decoration"
           />
         </div>
+
         <div className="col-4">
           <ul className="list-group list-group-flush current-weather">
-            <li className="list-group-item">Temp: 5°C</li>
-            <li className="list-group-item">Humidity: 5°C</li>
-            <li className="list-group-item">Wind: 5°C</li>
-            <li className="list-group-item">Percipitation: 5°C</li>
-            <li className="list-group-item">Percipitation: 5°C</li>
+            <li className="list-group-item text-start">Temp: 5°C</li>
+            <li className="list-group-item text-end">Humidity: 5%</li>
+            <li className="list-group-item text-start">Wind: 5 km/hr</li>
+            <li className="list-group-item text-end">Percipitation: 5%</li>
+            <li className="list-group-item">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/4834/4834559.png"
+                alt="Cloud weather icon"
+                className="img-fluid"
+                width="70px"
+              />
+            </li>
           </ul>
         </div>
         <div className="col-4">
           <img
             src={Design}
             alt="Simple mirrorred freehand design"
-            className="img-fluid"
+            className="img-fluid current-weather-decoration"
           />
         </div>
       </div>

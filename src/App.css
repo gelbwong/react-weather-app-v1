@@ -26,6 +26,7 @@ body {
 .country-title {
   margin-top: 20px;
   font-size: 35px;
+  font-family: "Playfair Display";
 }
 
 .search-engine {
@@ -61,17 +62,31 @@ body {
   color: antiquewhite;
 }
 
+.current-date {
+  background-image: url(./images/center-piece.png);
+  background-size: 320px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px;
+  font-style: italic;
+  font-weight: 700;
+}
+
 .current-weather-details {
-  padding-top: 30px;
+  margin-top: 15px;
 }
 .current-weather {
   --bs-list-group-bg: transparent !important;
   --bs-list-group-color: var(--text-colour) !important;
-  padding-top: 15px;
   font-size: 21px;
   font-family: "Playfair Display", serif;
+  font-weight: 300;
+  line-height: 1.7;
   font-style: italic;
 }
 .list-group-item {
   border-bottom: 1px solid var(--text-colour) !important;
+}
+.current-weather-decoration {
+  margin-top: 25px;
 }
