@@ -4,4 +4,5 @@
   font-size: 60px;
   color: var(--text-colour);
   font-family: "Playfair Display", serif;
+  filter: blur(0.55px);
 }

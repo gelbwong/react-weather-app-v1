@@ -2,12 +2,9 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 
-import Design from "./images/sample-designs.png";
-import LeftDesign from "./images/Left-design.png";
-import RightDesign from "./images/Right-design.png";
-
-import FormattedDate from "./FormattedDate";
 import LoadingText from "./LoadingText";
+import WeatherInfo from "./WeatherInfo";
+import Header from "./Header";
 
 export default function Weather(prop) {
   let [weatherInfo, setWeatherInfo] = useState({ ready: false });
@@ -58,26 +55,7 @@ export default function Weather(prop) {
   if (weatherInfo.ready) {
     return (
       <div className="Weather container">
-        <div className="row mt-4">
-          <div className="col-4">
-            <img
-              src={LeftDesign}
-              alt="Handrawn design for left of the title of page."
-              className="img-fluid city-decoration"
-            />
-          </div>
-          <div className="col-4 city-country">
-            <h1 className="city-title">{weatherInfo.city}</h1>
-            <h2 className="country-title">{weatherInfo.country}</h2>
-          </div>
-          <div className="col-4">
-            <img
-              src={RightDesign}
-              alt="Handrawn design for right of the title of page."
-              className="img-fluid"
-            />
-          </div>
-        </div>
+        <Header data={weatherInfo} />
 
         <form
           className="search-engine"
@@ -103,53 +81,7 @@ export default function Weather(prop) {
             </div>
           </div>
         </form>
-
-        <div className="row current-date ">
-          <div className="col-6 text-start date-time">
-            <FormattedDate date={weatherInfo.date} />
-          </div>
-          <div className="col-6 text-end weather-description text-capitalize">
-            {weatherInfo.description}
-          </div>
-        </div>
-
-        <div className="row current-weather-details">
-          <div className="col-4">
-            <img
-              src={Design}
-              alt="Simple mirrorred freehand design"
-              className="img-fluid current-weather-decoration"
-            />
-          </div>
-
-          <div className="col-4">
-            <ul className="list-group list-group-flush current-weather">
-              <li className="list-group-item ">Temp: {weatherInfo.temp}°C</li>
-              <li className="list-group-item ">
-                Humidity: {weatherInfo.humidity}%
-              </li>
-              <li className="list-group-item ">
-                Wind: {Math.round(weatherInfo.wind)} km/hr
-              </li>
-
-              <li className="list-group-item">
-                <img
-                  src={weatherInfo.iconUrl}
-                  alt={weatherInfo.iconDescription}
-                  className="img-fluid"
-                  width="130px"
-                />
-              </li>
-            </ul>
-          </div>
-          <div className="col-4">
-            <img
-              src={Design}
-              alt="Simple mirrorred freehand design"
-              className="img-fluid current-weather-decoration"
-            />
-          </div>
-        </div>
+        <WeatherInfo data={weatherInfo} />
       </div>
     );
   } else {
