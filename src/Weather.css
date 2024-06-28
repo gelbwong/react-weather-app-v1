@@ -7,6 +7,10 @@ body {
   background-image: url(noise.svg);
 }
 
+.Weather .city-country {
+  padding: 0px;
+}
+
 .Weather .city-title {
   margin: 0 auto;
   margin-top: 60px;
