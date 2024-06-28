@@ -1,12 +1,15 @@
 import React from "react";
-import Typewriter from "typewriter-effect/dist/core";
+import Typewriter from "typewriter-effect";
+
+import "./LoadingText.css";
 
 export default function LoadingText() {
   return (
-    <div>
+    <div className="loading-text">
       <Typewriter
         options={{
-          strings: ["Hello", "World"],
+          strings: ["Please be patient while site loads ❤️"],
+          delay: 25,
           autoStart: true,
           loop: true,
         }}
