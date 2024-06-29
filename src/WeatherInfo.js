@@ -3,6 +3,7 @@ import React from "react";
 import Design from "./images/sample-designs.png";
 
 import FormattedDate from "./FormattedDate";
+import UnitConversion from "./UnitConversion";
 
 export default function WeatherInfo(props) {
   return (
@@ -27,12 +28,13 @@ export default function WeatherInfo(props) {
 
         <div className="col-4">
           <ul className="list-group list-group-flush current-weather">
-            <li className="list-group-item ">Temp: {props.data.temp}°C</li>
+            <UnitConversion
+              defaultUnit="celsius"
+              temp={props.data.temp}
+              wind={props.data.wind}
+            />
             <li className="list-group-item ">
               Humidity: {props.data.humidity}%
-            </li>
-            <li className="list-group-item ">
-              Wind: {Math.round(props.data.wind)} km/hr
             </li>
 
             <li className="list-group-item">

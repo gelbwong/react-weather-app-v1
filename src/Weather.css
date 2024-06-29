@@ -85,3 +85,18 @@ body {
 .Weather .current-weather-decoration {
   margin-top: 25px;
 }
+
+.Weather .no-border {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.Weather .no-border a {
+  text-decoration: none;
+  color: var(--lighter-text-colour);
+}
+.Weather .no-border a:hover {
+  color: var(--sample-colour);
+  text-decoration: underline;
+}
