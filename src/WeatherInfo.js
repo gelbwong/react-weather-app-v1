@@ -42,7 +42,7 @@ export default function WeatherInfo(props) {
                 src={props.data.iconUrl}
                 alt={props.data.iconDescription}
                 className="img-fluid"
-                width="130px"
+                width="140px"
               />
             </li>
           </ul>
