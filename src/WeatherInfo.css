@@ -1,0 +1,46 @@
+.WeatherInfo .current-date {
+  background-image: url(./images/center-piece.png);
+  background-size: 320px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.WeatherInfo .current-weather-details {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.WeatherInfo .current-weather {
+  --bs-list-group-bg: transparent !important;
+  --bs-list-group-color: var(--text-colour) !important;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  line-height: 1.7;
+  font-style: italic;
+  letter-spacing: 1.3px;
+}
+
+.WeatherInfo .list-group-item {
+  border-bottom-color: var(--lighter-text-colour) !important;
+}
+.WeatherInfo .current-weather-decoration {
+  margin-top: 25px;
+}
+
+.WeatherInfo .no-border {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.WeatherInfo .no-border a {
+  text-decoration: none;
+  color: var(--lighter-text-colour);
+}
+.WeatherInfo .no-border a:hover {
+  color: var(--sample-colour);
+  text-decoration: underline;
+}

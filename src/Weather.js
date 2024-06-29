@@ -5,6 +5,7 @@ import "./Weather.css";
 import LoadingText from "./LoadingText";
 import WeatherInfo from "./WeatherInfo";
 import Header from "./Header";
+import Forecast from "./Forecast";
 
 export default function Weather(prop) {
   let [weatherInfo, setWeatherInfo] = useState({ ready: false });
@@ -33,6 +34,7 @@ export default function Weather(prop) {
       ready: true,
 
       city: response.data.name,
+      coords: response.data.coord,
       country: country,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
@@ -82,6 +84,7 @@ export default function Weather(prop) {
           </div>
         </form>
         <WeatherInfo data={weatherInfo} />
+        <Forecast data={weatherInfo.coords} />
       </div>
     );
   } else {

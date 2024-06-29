@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./WeatherInfo.css";
+
 import Design from "./images/sample-designs.png";
 
 import FormattedDate from "./FormattedDate";
@@ -7,7 +9,7 @@ import UnitConversion from "./UnitConversion";
 
 export default function WeatherInfo(props) {
   return (
-    <div>
+    <div className="WeatherInfo">
       <div className="row current-date ">
         <div className="col-6 text-start date-time">
           <FormattedDate date={props.data.date} />

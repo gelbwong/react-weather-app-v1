@@ -1,0 +1,14 @@
+.Header .city-country {
+  padding: 0px;
+}
+
+.Header .city-title {
+  margin: 0 auto;
+  margin-top: 60px;
+  font-size: 50px;
+}
+.Header .country-title {
+  margin-top: 20px;
+  font-size: 35px;
+  font-family: "Playfair Display";
+}

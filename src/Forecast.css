@@ -1,0 +1,7 @@
+.Forecast {
+  margin-bottom: 20px;
+}
+
+.Forecast .forecast-max-temp {
+  color: var(--lighter-text-colour);
+}

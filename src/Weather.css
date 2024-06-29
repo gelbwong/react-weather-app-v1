@@ -7,21 +7,6 @@ body {
   background-image: url(noise.svg);
 }
 
-.Weather .city-country {
-  padding: 0px;
-}
-
-.Weather .city-title {
-  margin: 0 auto;
-  margin-top: 60px;
-  font-size: 50px;
-}
-.Weather .country-title {
-  margin-top: 20px;
-  font-size: 35px;
-  font-family: "Playfair Display";
-}
-
 .Weather .search-engine {
   padding: 25px 20px 10px 20px;
 }
@@ -53,50 +38,4 @@ body {
 .Weather .search-button:hover {
   background-color: #480d0dad;
   color: antiquewhite;
-}
-
-.Weather .current-date {
-  background-image: url(./images/center-piece.png);
-  background-size: 320px;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 30px;
-  font-style: italic;
-  font-weight: 700;
-}
-
-.Weather .current-weather-details {
-  margin-top: 15px;
-  margin-bottom: 30px;
-}
-.Weather .current-weather {
-  --bs-list-group-bg: transparent !important;
-  --bs-list-group-color: var(--text-colour) !important;
-  font-size: 20px;
-  font-family: "Playfair Display", serif;
-  font-weight: 300;
-  line-height: 1.7;
-  font-style: italic;
-  letter-spacing: 1.3px;
-}
-.Weather .list-group-item {
-  border-bottom-color: var(--lighter-text-colour) !important;
-}
-.Weather .current-weather-decoration {
-  margin-top: 25px;
-}
-
-.Weather .no-border {
-  border-left: none;
-  border-right: none;
-  border-top: none;
-}
-
-.Weather .no-border a {
-  text-decoration: none;
-  color: var(--lighter-text-colour);
-}
-.Weather .no-border a:hover {
-  color: var(--sample-colour);
-  text-decoration: underline;
 }
