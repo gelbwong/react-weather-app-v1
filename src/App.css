@@ -7,3 +7,14 @@
   color: var(--text-colour);
   filter: blur(0.55px);
 }
+
+@media not all and (min-resolution: 0.001dpcm) {
+  .container {
+    filter: blur(0px) !important;
+  }
+}
+@supports (-webkit-touch-callout: none) {
+  .container {
+    filter: blur(0px) !important;
+  }
+}

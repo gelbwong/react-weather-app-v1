@@ -3,8 +3,13 @@
   --sample-colour: #480d0d;
   --lighter-text-colour: #480d0dc4;
 }
+
 body {
   background-image: url(noise.svg);
+}
+
+.Weather .container {
+  margin: 5px;
 }
 
 .Weather .search-engine {
@@ -38,4 +43,40 @@ body {
 .Weather .search-button:hover {
   background-color: #480d0dad;
   color: antiquewhite;
+}
+
+@media (max-width: 605px) {
+  .search-engine,
+  .search-button-div {
+    padding: 0px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-button {
+    padding: 6px 9px !important;
+  }
+
+  .search-bar {
+    padding: 6px !important;
+  }
+
+  .container {
+    margin: 15px 10px !important;
+    border: 5px solid !important;
+  }
+}
+
+@media (max-width: 361px) {
+  .search-bar::placeholder,
+  .search-button,
+  .search-button:hover,
+  .search-bar:focus,
+  .search-bar {
+    font-size: 13px !important;
+  }
+
+  .search-bar-div {
+    padding-right: 0px !important;
+  }
 }

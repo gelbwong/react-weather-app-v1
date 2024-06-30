@@ -20,7 +20,7 @@ export default function WeatherInfo(props) {
       </div>
 
       <div className="row current-weather-details">
-        <div className="col-4">
+        <div className="d-none d-sm-block col-4">
           <img
             src={Design}
             alt="Simple mirrorred freehand design"
@@ -28,7 +28,7 @@ export default function WeatherInfo(props) {
           />
         </div>
 
-        <div className="col-4">
+        <div className="col-12 col-sm-4">
           <ul className="list-group list-group-flush current-weather">
             <UnitConversion
               defaultUnit="celsius"
@@ -50,7 +50,7 @@ export default function WeatherInfo(props) {
             </li>
           </ul>
         </div>
-        <div className="col-4">
+        <div className="col-4 d-none d-sm-block ">
           <img
             src={Design}
             alt="Simple mirrorred freehand design"

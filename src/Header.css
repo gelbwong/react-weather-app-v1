@@ -12,3 +12,13 @@
   font-size: 35px;
   font-family: "Playfair Display";
 }
+
+@media (max-width: 576px) {
+  .Header {
+    background-image: url(./images/Left-design.png),
+      url(./images/Right-design.png);
+    background-size: 150px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+  }
+}
