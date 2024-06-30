@@ -5,12 +5,18 @@ export default function UnitConversion(props) {
 
   function showFahrenheit(event) {
     event.preventDefault();
+
     setUnit("fahrenheit");
+
+    props.onButtonClick("fahrenheit");
   }
 
   function showCelsius(event) {
     event.preventDefault();
+
     setUnit("celsius");
+
+    props.onButtonClick("celsius");
   }
 
   function fahrenheitTemp() {

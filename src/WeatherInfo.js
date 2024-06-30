@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./WeatherInfo.css";
 
@@ -32,6 +32,7 @@ export default function WeatherInfo(props) {
           <ul className="list-group list-group-flush current-weather">
             <UnitConversion
               defaultUnit="celsius"
+              onButtonClick={props.onButtonClick}
               temp={props.data.temp}
               wind={props.data.wind}
             />

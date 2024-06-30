@@ -10,6 +10,11 @@ import Forecast from "./Forecast";
 export default function Weather(prop) {
   let [weatherInfo, setWeatherInfo] = useState({ ready: false });
   let [city, setCity] = useState(prop.defaultCity);
+  let [unit, setUnit] = useState("celsius");
+
+  let handleButtonClick = (newUnit) => {
+    setUnit(newUnit);
+  };
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -51,7 +56,14 @@ export default function Weather(prop) {
     const unit = "metric";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
 
-    axios.get(apiUrl).then(handleSearch);
+    axios
+      .get(apiUrl)
+      .then(handleSearch)
+      .catch((error) => {
+        alert(
+          `Sorry about ${city}, I'm not sure about that. Please try another city again!`
+        );
+      });
   }
 
   if (weatherInfo.ready) {
@@ -83,9 +95,9 @@ export default function Weather(prop) {
             </div>
           </div>
         </form>
-        <WeatherInfo data={weatherInfo} />
+        <WeatherInfo data={weatherInfo} onButtonClick={handleButtonClick} />
 
-        <Forecast data={weatherInfo.coords} />
+        <Forecast data={weatherInfo.coords} unit={unit} />
       </div>
     );
   } else {
