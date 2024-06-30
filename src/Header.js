@@ -7,24 +7,10 @@ import "./Header.css";
 
 export default function Header(props) {
   return (
-    <div className="row mt-4 Header">
-      <div className="col-4 d-none d-sm-block">
-        <img
-          src={LeftDesign}
-          alt="Handrawn design for left of the title of page."
-          className="img-fluid city-decoration "
-        />
-      </div>
-      <div className="col-12 col-sm-4 city-country">
+    <div className=" pt-4 Header">
+      <div className="city-country">
         <h1 className="city-title">{props.data.city}</h1>
         <h2 className="country-title">{props.data.country}</h2>
-      </div>
-      <div className="col-4 d-none d-sm-block">
-        <img
-          src={RightDesign}
-          alt="Handrawn design for right of the title of page."
-          className="img-fluid "
-        />
       </div>
     </div>
   );

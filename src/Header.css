@@ -1,10 +1,21 @@
+.Header {
+  background-image: url(./images/Left-design.png),
+    url(./images/Right-design.png);
+  background-size: 210px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 25px;
+}
+
 .Header .city-country {
   padding: 0px;
 }
 
 .Header .city-title {
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 20px;
   font-size: 50px;
 }
 .Header .country-title {

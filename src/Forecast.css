@@ -5,3 +5,7 @@
 .Forecast .forecast-max-temp {
   color: var(--lighter-text-colour);
 }
+
+.Forecast .forecast-day {
+  color: var(--blue-text-colour);
+}

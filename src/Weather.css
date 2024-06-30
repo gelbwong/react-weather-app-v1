@@ -2,6 +2,7 @@
   --text-colour: rgb(112, 1, 1);
   --sample-colour: #480d0d;
   --lighter-text-colour: #480d0dc4;
+  --blue-text-colour: rgba(1, 1, 126, 0.698);
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 .Weather .search-engine {
-  padding: 25px 20px 10px 20px;
+  padding: 5px 20px 10px 20px;
 }
 .Weather .search-bar,
 .Weather .search-button {
