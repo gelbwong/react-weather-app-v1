@@ -1,8 +1,5 @@
 import React from "react";
 
-import LeftDesign from "./images/Left-design.png";
-import RightDesign from "./images/Right-design.png";
-
 import "./Header.css";
 
 export default function Header(props) {
